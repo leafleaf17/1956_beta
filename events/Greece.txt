@@ -93,8 +93,22 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = greece_rework.4.a
-		add_political_power = -20
+		add_to_variable = {
+			GRE_soc_pp = -0.05
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_minus_5_pp
 		add_stability = -0.04
+	}
+}
+country_event = {
+	id = greece_rework.5
+	title = greece_rework.5.t
+	desc = greece_rework.5.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.5.a
+		add_stability = 0.025
 	}
 }
 

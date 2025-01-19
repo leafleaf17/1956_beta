@@ -35,8 +35,23 @@ set_variable = {
 set_variable = {
 	GRE_military_anger = 2
 }
+set_variable = {
+	GRE_soc_pp = -0.1
+}
+set_variable = {
+	GRE_soc_stab = -0.2
+}
+set_variable = {
+	GRE_building_speed = -0.05
+}
+set_variable = {
+	GRE_soc_factory_output = -0.15
+}
 add_dynamic_modifier = {
 	modifier = GRE_nation_under_watch
+}
+add_dynamic_modifier = {
+	modifier = GRE_social_unrest
 }
 add_ideas = {
 	GRE_depression_1
@@ -154,7 +169,7 @@ set_popularities = {
 	neutrality = 21
 }
 
-set_stability = 0.45
+set_stability = 0.6
 #was DLC-exclusive
 recruit_character = GRE_konstantinos_demertzis#uses r56 portrait and trait
 recruit_character = GRE_konstantinos_demertzis_r56
