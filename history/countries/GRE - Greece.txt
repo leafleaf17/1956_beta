@@ -41,8 +41,6 @@ add_dynamic_modifier = {
 add_ideas = {
 	GRE_depression_1
 	GRE_shadow_of_1921
-	GRE_government_crisis
-	GRE_divided_nation
 	GRE_naval_industry_rivalary
 	r56_YUG_balkan_pact
 }

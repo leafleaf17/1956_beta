@@ -74,6 +74,41 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			country_event = greece_rework.2
+		}
+	}
+	focus = {
+		id = GRE_victory_of_the_liberals
+		icon = GFX_fill_later
+		mutually_exclusive = {
+			focus = GRE_the_right_to_rule
+		}
+		available = {
+			always = no
+		}
+		x = 2
+		y = 2
+		relative_position_id = GRE_democratic_experiment
+		prerequisite = {
+			focus = GRE_january_elections
+		}
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		
 		}
 	}
 	focus = {

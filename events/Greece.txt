@@ -9,7 +9,6 @@ country_event = {
 	desc = greece_rework.1.d
 	picture = GFX_report_event_stalin_02
 	is_triggered_only = yes
-	
 	option = {
 		name = greece_rework.1.a
 		add_political_power = 10
@@ -20,6 +19,64 @@ country_event = {
 	}
 	option = {
 		name = greece_rework.1.b
+	}
+}
+
+country_event = {
+	id = greece_rework.2
+	title = greece_rework.2.t
+	desc = greece_rework.2.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.2.a
+		complete_national_focus = GRE_victory_of_the_liberals
+		add_stability = -0.02
+		add_ideas = GRE_government_in_crisis
+	}
+}
+
+country_event = {
+	id = greece_rework.3
+	title = greece_rework.3.t
+	desc = greece_rework.3.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.3.a
+		custom_effect_tooltip = GRE_mil_anger_1
+		add_to_variable = {
+			GRE_military_anger = 1
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+		add_political_power = -20
+	}
+	option = {
+		name = greece_rework.3.b
+		custom_effect_tooltip = GRE_mil_anger_2
+		add_to_variable = {
+			GRE_military_anger = 2
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.03
+		}
+	}
+}
+
+country_event = {
+	id = greece_rework.4
+	title = greece_rework.4.t
+	desc = greece_rework.4.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.4.a
+		add_political_power = -20
+		add_stability = -0.04
 	}
 }
 
