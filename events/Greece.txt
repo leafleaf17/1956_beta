@@ -1,59 +1,81 @@
 ﻿###########################
 # Greek Events
 ###########################
-
 add_namespace = greece
+add_namespace = greece_rework
+country_event = {
+	id = greece_rework.1
+	title = greece_rework.1.t
+	desc = greece_rework.1.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	
+	option = {
+		name = greece_rework.1.a
+		add_political_power = 10
+		custom_effect_tooltip = GRE_mil_anger_1
+		add_to_variable = {
+			GRE_military_anger = 1
+		}
+	}
+	option = {
+		name = greece_rework.1.b
+	}
+}
 
-# Soviet Demands
 country_event = {
 	id = greece.1
 	title = greece.1.t
 	desc = greece.1.d
 	picture = GFX_report_event_stalin_02
-	
 	is_triggered_only = yes
-	
-	option = { # Accept demands
+	option = {
+		# Accept demands
 		name = greece.1.a
-		ai_chance = {	
+		ai_chance = {
 			modifier = {
 				factor = 0
 				OR = {
 					any_other_country = {
-
 						has_guaranteed = GRE
 					}
 					any_other_country = {
-
 						is_in_faction_with = GRE
 					}
 				}
 			}
-			base = 100	
+			base = 100
 		}
-
-		SOV = { transfer_state = 187 }
+		SOV = {
+			transfer_state = 187
+		}
 		if = {
 			limit = {
-				BUL = { 
-					OR = { 
-						is_in_faction_with = SOV 
+				BUL = {
+					OR = {
+						is_in_faction_with = SOV
 						is_in_faction = no
 					}
 				}
 			}
-			BUL = { 
+			BUL = {
 				transfer_state = 184
-				add_opinion_modifier = { target = SOV modifier = SOV_ultimatum_to_greece_thrace }
+				add_opinion_modifier = {
+					target = SOV
+					modifier = SOV_ultimatum_to_greece_thrace
+				}
 			}
 		}
 		hidden_effect = {
-			news_event = { id = news.197 }
+			news_event = {
+				id = news.197
+			}
 		}
 	}
-	option = { # Refuse
+	option = {
+		# Refuse
 		name = greece.1.b
-		ai_chance = {	
+		ai_chance = {
 			modifier = {
 				factor = 0
 				NOT = {
@@ -65,10 +87,13 @@ country_event = {
 					}
 				}
 			}
-			base = 5	
+			base = 5
 		}
 		hidden_effect = {
-			news_event = { id = news.198 hours = 6 }
+			news_event = {
+				id = news.198
+				hours = 6
+			}
 		}
 	}
 }
@@ -77,18 +102,22 @@ country_event = {
 country_event = {
 	id = greece.2
 	title = greece.2.t
-
-	desc = { 
+	desc = {
 		text = greece.2.d_GER_demand
 		trigger = {
 			OR = {
-				731 = { has_state_flag = GER_second_ljubljana_award_GER_demand }
-				185 = { has_state_flag = GER_second_ljubljana_award_GER_demand }
-				47 = { has_state_flag = GER_second_ljubljana_award_GER_demand }
+				731 = {
+					has_state_flag = GER_second_ljubljana_award_GER_demand
+				}
+				185 = {
+					has_state_flag = GER_second_ljubljana_award_GER_demand
+				}
+				47 = {
+					has_state_flag = GER_second_ljubljana_award_GER_demand
+				}
 			}
 		}
 	}
-
 	desc = {
 		text = greece.2.d_ITA
 		trigger = {
@@ -96,20 +125,26 @@ country_event = {
 				has_global_flag = GER_second_ljubljana_award_ITA_182
 				has_global_flag = GER_second_ljubljana_award_ITA_187
 			}
-			NOT = { has_global_flag = GER_second_ljubljana_award_BUL_184 }
+			NOT = {
+				has_global_flag = GER_second_ljubljana_award_BUL_184
+			}
 		}
 	}
-	
 	desc = {
 		text = greece.2.d_BUL
 		trigger = {
-			NOT = { has_global_flag = GER_second_ljubljana_award_ITA_185 }
-			NOT = { has_global_flag = GER_second_ljubljana_award_ITA_186 }
-			NOT = { has_global_flag = GER_second_ljubljana_award_ITA_47 }
+			NOT = {
+				has_global_flag = GER_second_ljubljana_award_ITA_185
+			}
+			NOT = {
+				has_global_flag = GER_second_ljubljana_award_ITA_186
+			}
+			NOT = {
+				has_global_flag = GER_second_ljubljana_award_ITA_47
+			}
 			has_global_flag = GER_second_ljubljana_award_BUL_184
 		}
 	}
-
 	desc = {
 		text = greece.2.d_ITA_BUL
 		trigger = {
@@ -120,23 +155,19 @@ country_event = {
 			has_global_flag = GER_second_ljubljana_award_BUL_184
 		}
 	}
-
 	picture = GFX_report_event_generic_sign_treaty2
-	
 	is_triggered_only = yes
-	
-	option = { # Accept demands
+	option = {
+		# Accept demands
 		name = greece.2.a
-		ai_chance = {	
+		ai_chance = {
 			modifier = {
 				factor = 0
 				OR = {
 					any_other_country = {
-
 						has_guaranteed = GRE
 					}
 					any_other_country = {
-
 						is_in_faction_with = GRE
 					}
 				}
@@ -145,84 +176,108 @@ country_event = {
 				factor = 0
 				is_puppet = yes
 			}
-			base = 100	
+			base = 100
 		}
-
 		hidden_effect = {
-			news_event = { id = news.170 hours = 2}
+			news_event = {
+				id = news.170
+				hours = 2
+			}
 		}
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_BUL_184
 			}
-			BUL = { transfer_state = 184 }
+			BUL = {
+				transfer_state = 184
+			}
 		}
-
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_ITA_182
 			}
-			ITA = { transfer_state = 182 }
+			ITA = {
+				transfer_state = 182
+			}
 		}
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_ITA_187
 			}
-			ITA = { transfer_state = 187 }
+			ITA = {
+				transfer_state = 187
+			}
 		}
-
 		if = {
-			limit = { 
+			limit = {
 				has_global_flag = GER_second_ljubljana_award_GER_731
 			}
-			GER = { transfer_state = 731 }
+			GER = {
+				transfer_state = 731
+			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				has_global_flag = GER_second_ljubljana_award_GER_185
-				NOT = { has_global_flag = GER_second_ljubljana_award_GER_731 }
+				NOT = {
+					has_global_flag = GER_second_ljubljana_award_GER_731
+				}
 			}
-			GER = { transfer_state = 185 }
+			GER = {
+				transfer_state = 185
+			}
 		}
 		if = {
-			limit = { 
+			limit = {
 				has_global_flag = GER_second_ljubljana_award_GER_47
-				NOT = { has_global_flag = GER_second_ljubljana_award_GER_731 }
-				NOT = { has_global_flag = GER_second_ljubljana_award_GER_185 }
+				NOT = {
+					has_global_flag = GER_second_ljubljana_award_GER_731
+				}
+				NOT = {
+					has_global_flag = GER_second_ljubljana_award_GER_185
+				}
 			}
-			GER = { transfer_state = 47 }
+			GER = {
+				transfer_state = 47
+			}
 		}
 	}
-	
-	option = { # Refuse
+	option = {
+		# Refuse
 		name = greece.2.b
-		ai_chance = {	
+		ai_chance = {
 			modifier = {
 				factor = 0
 				NOT = {
 					OR = {
 						any_other_country = {
-
 							has_guaranteed = GRE
 						}
 						any_other_country = {
-
 							is_in_faction_with = GRE
 						}
 					}
 				}
 			}
-			base = 5	
+			base = 5
 		}
-		GER = { country_event = { id = germany.102 hours = 6 } }
-		news_event = { id = news.171 hours = 2 }
+		GER = {
+			country_event = {
+				id = germany.102
+				hours = 6
+			}
+		}
+		news_event = {
+			id = news.171
+			hours = 2
+		}
 		effect_tooltip = {
 			GER = {
 				create_wargoal = {
 					type = annex_everything
-					target = GRE		
+					target = GRE
 				}
-			}			
+			}
 		}
 	}
 }
@@ -233,36 +288,38 @@ country_event = {
 	title = greece.3.t
 	desc = greece.3.d
 	picture = GFX_report_event_generic_sign_treaty2
-	
 	is_triggered_only = yes
-	
-	option = { # Accept demands
+	option = {
+		# Accept demands
 		name = greece.3.a
-		ai_chance = {	
+		ai_chance = {
 			modifier = {
 				factor = 0
 				OR = {
 					any_other_country = {
-	
 						has_guaranteed = GRE
 					}
 					any_other_country = {
-
 						is_in_faction_with = GRE
 					}
 				}
 			}
-			base = 100	
+			base = 100
 		}
-		GER = { puppet = GRE }
+		GER = {
+			puppet = GRE
+		}
 		hidden_effect = {
-			news_event = { id = news.172 hours = 2 }
+			news_event = {
+				id = news.172
+				hours = 2
+			}
 		}
 	}
-
-	option = { # Refuse
+	option = {
+		# Refuse
 		name = greece.3.b
-		ai_chance = {	
+		ai_chance = {
 			base = 5
 			modifier = {
 				factor = 0
@@ -276,14 +333,19 @@ country_event = {
 				}
 			}
 		}
-		GER = { country_event = { id = germany.102 hours = 6 } }
+		GER = {
+			country_event = {
+				id = germany.102
+				hours = 6
+			}
+		}
 		effect_tooltip = {
 			GER = {
 				create_wargoal = {
 					type = puppet_wargoal_focus
-					target = GRE		
+					target = GRE
 				}
-			}			
+			}
 		}
 	}
 }
@@ -294,16 +356,16 @@ country_event = {
 	title = greece.4.t
 	desc = greece.4.d
 	picture = GFX_report_event_fascist_militia
-	
 	is_triggered_only = yes
-	
-	option = { # Accept demands
+	option = {
+		# Accept demands
 		name = greece.4.a
 		create_wargoal = {
 			type = take_state_focus
 			target = TUR
-			generator = { 339 }
+			generator = {
+				339
+			}
 		}
-		
 	}
 }

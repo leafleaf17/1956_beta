@@ -1,0 +1,162 @@
+focus_tree = {
+	id = greek_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = GRE
+			has_dlc = "Battle for the Bosporus"
+			has_global_flag = gre_bftb_focus_tree
+		}
+	}
+	shared_focus = MAE_EMPIRE_persian_imperial_ambitions
+	default = no
+	continuous_focus_position = {
+		x = 50
+		y = 1500
+	}
+	focus = {
+		id = GRE_democratic_experiment
+		icon = GFX_fill_later
+		mutually_exclusive = {
+			focus = GRE_the_right_to_rule
+		}
+		available = {
+		}
+		x = 0
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GRE_january_elections
+		icon = GFX_fill_later
+		mutually_exclusive = {
+			focus = GRE_the_right_to_rule
+		}
+		cancelable = no
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = GRE_democratic_experiment
+		prerequisite = {
+			focus = GRE_democratic_experiment
+		}
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GRE_the_right_to_rule
+		icon = GFX_fill_later
+		mutually_exclusive = {
+			focus = GRE_democratic_experiment
+		}
+		available = {
+		}
+		x = -2
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GRE_end_of_an_era
+		icon = GFX_fill_later
+		available = {
+		}
+		x = -8
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = GRE_the_military_government
+		icon = GFX_fill_later
+		available = {
+		}
+		relative_position_id = GRE_end_of_an_era
+		prerequisite = {
+			focus = GRE_end_of_an_era
+			focus = GRE_the_right_to_rule
+		}
+		x = 0
+		y = 1
+		cost = 10
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		}
+	}
+}
