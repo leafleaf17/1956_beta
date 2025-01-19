@@ -475,8 +475,8 @@
  GNB_democratic_party_long:0 "Partido Africano para a Independência da Guiné e Cabo Verde (Transição Democrática)"
 
  #GRE
- GRE_democratic_party:0 "Demertzi"
- GRE_democratic_party_long:0 "Kyvernisi Demertzi"
+ GRE_democratic_party:0 "Liberal Party"
+ GRE_democratic_party_long:0 "Koma Filelefoeron"
  GRE_democratic_metaxas:0 "Metaxá"
  #GRE_neutrality_party:0 "Nklýxmpournk" -what os this name? Fantom
  #GRE_neutrality_party_long:0 "Oíkos tou Nklýxmpournk"
@@ -489,8 +489,8 @@
  GRE_communism_party_long:0 "Kommounistikó Kómma Elládas"
  GRE_laikon_komma:0 "LK"
  GRE_laikon_komma_long:0 "Laïkòn Kómma"
- GRE_fascism_party:0 "EESK"
- GRE_fascism_party_long:0 "Elliniko Ethniko Sosialistiko Komma"
+ GRE_fascism_party:0 "Metaxism"
+ GRE_fascism_party_long:0 "Metaxism"
  GRE_neutrality_party_koryzi:0 "Koryzi"
  GRE_neutrality_party_koryzi_long:0 "Kathestós Koryzi"
  GRE_democratic_party_liberal:0 "KF"

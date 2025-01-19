@@ -599,23 +599,19 @@ on_actions = {
 				set_global_flag = gre_bftb_focus_tree
 				GRE = {
 					#kill_ideology_leader = democratic #whom is this targeted on?
-					set_party_name = {
-						ideology = neutrality
-						long_name = GRE_democratic_metaxas_long
-						name = GRE_democratic_metaxas
-					}
+					
 					set_politics = {
-						ruling_party = neutrality
-						last_election = "1935.6.9"
-						election_frequency = 7
-						elections_allowed = yes # none after offset 1
+						ruling_party = democratic
+						last_election = "1935.11.3"
+						election_frequency = 48
+						elections_allowed = yes
 					}
-					#promote_character = GRE_ioannis_metaxas - has double roles and he shall definitely not be neutrality leader from game start - Fantom
+					
 					set_popularities = {
-						democratic = 43
-						fascism = 2
-						communism = 17
-						neutrality = 38
+						democratic = 59
+						fascism = 7
+						communism = 13
+						neutrality = 21
 					}
 					load_focus_tree = greek_focus
 					set_country_flag = gre_bftb_focus_tree_cf
@@ -634,7 +630,6 @@ on_actions = {
 						GRE_debt_to_the_ifc
 						GRE_foreign_monopolies
 						GRE_schachtplan
-						GRE_political_instability
 						GRE_agrarian_society
 					}
 					add_opinion_modifier = {
