@@ -33,6 +33,12 @@ country_event = {
 		complete_national_focus = GRE_victory_of_the_liberals
 		add_stability = -0.02
 		add_ideas = GRE_government_in_crisis
+		hidden_effect = {
+			country_event = {
+				id = greece_rework.3
+				days = 8
+			}
+		}
 	}
 }
 
@@ -53,6 +59,12 @@ country_event = {
 			popularity = 0.03
 		}
 		add_political_power = -20
+		hidden_effect = {
+			country_event = {
+				id = greece_rework.4
+				days = 8
+			}
+		}
 	}
 	option = {
 		name = greece_rework.3.b
@@ -63,6 +75,12 @@ country_event = {
 		add_popularity = {
 			ideology = communism
 			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = greece_rework.4
+				days = 8
+			}
 		}
 	}
 }

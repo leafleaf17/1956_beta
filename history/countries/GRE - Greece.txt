@@ -12,7 +12,7 @@ if = {
 }
 
 unlock_national_focus = GRE_democratic_experiment
-set_research_slots = 4
+set_research_slots = 3
 add_ideas = {
 	limited_conscription
 }
@@ -33,7 +33,7 @@ set_variable = {
 	GRE_pol_mil_army_xp = -0.05
 }
 set_variable = {
-	GRE_military_anger = 1
+	GRE_military_anger = 2
 }
 add_dynamic_modifier = {
 	modifier = GRE_nation_under_watch
@@ -148,13 +148,13 @@ set_politics = {
 }
 
 set_popularities = {
-	democratic = 55
-	fascism = 5
-	communism = 17
-	neutrality = 23
+	democratic = 59
+	fascism = 7
+	communism = 13
+	neutrality = 21
 }
 
-set_stability = 0.4
+set_stability = 0.45
 #was DLC-exclusive
 recruit_character = GRE_konstantinos_demertzis#uses r56 portrait and trait
 recruit_character = GRE_konstantinos_demertzis_r56

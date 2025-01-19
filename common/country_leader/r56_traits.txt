@@ -228,7 +228,13 @@ leader_traits = {
 		foreign_subversive_activites = -0.10
 		communism_acceptance = -25
 	}
-
+minister_of_army_affairs = {
+	sprite = 13
+	random = no
+	experience_gain_army_factor = 0.1
+	fascism_drift = 0.03
+	stability_factor = 0.05
+}
 	compromised_beliefs = {
 		random = no
 
