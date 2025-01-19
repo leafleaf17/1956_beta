@@ -57,20 +57,7 @@ GRE_hellenic_academy_category  = {
 	}	
 }
 
-GRE_faction_management_category = {
-	priority = 9
-	icon = gre_faction_management
 
-	scripted_gui = gre_internal_factions_decision_ui
-
-	allowed = {
-		original_tag = GRE
-		has_dlc = "Battle for the Bosporus"
-	}
-	visible = {
-		has_global_flag = gre_bftb_focus_tree
-	}
-}
 ################## Beginning of RT56 decisions
 
 GRE_divided_nation_category = {
