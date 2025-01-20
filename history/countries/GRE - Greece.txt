@@ -187,6 +187,8 @@ recruit_character = GRE_markos_drakos#fixed broken non-DLC portraits and matched
 recruit_character = GRE_nikos_beloyannis#merged instances, needs to be split
 recruit_character = GRE_alexandros_sakellariou#kept vanilla's GFX-determining instances and made availability checks conditional
 recruit_character = GRE_panagiotis_gazis#merged instances, uses r56 image, ported r56 tree exclusive theorist role
+recruit_character = GRE_panagis_tsaldaris
+
 recruit_character = GRE_petros_voulgaris#merged instances, ported ft check
 recruit_character = GRE_petros_voulgaris_r56#ported, switched to freely available DLC image
 recruit_character = GRE_vasilios_tsarpalis#merged instances that split generic/DLC image, GFX available in main game folder

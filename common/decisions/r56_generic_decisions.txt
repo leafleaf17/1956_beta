@@ -2477,7 +2477,6 @@ foreign_politics = {
 
 		allowed = {
 			OR = {
-				original_tag = GRE
 				original_tag = TUR
 				original_tag = ROM
 				original_tag = YUG

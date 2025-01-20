@@ -110,13 +110,88 @@ focus_tree = {
 	focus = {
 		id = GRE_rehabilitate_the_monarchy
 		icon = GFX_fill_later
-		mutually_exclusive = {
-			focus = GRE_the_right_to_rule
-		}
 		available = {
 			always = no
 		}
+		x = -2
+		y = 1
+		relative_position_id = GRE_victory_of_the_liberals
+		prerequisite = {
+			focus = GRE_victory_of_the_liberals
+		}
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = GRE_modify_social_unrest_5_pp_5_stab
+			add_to_variable = {
+				GRE_soc_pp = 0.05
+			}
+			add_to_variable = {
+				GRE_soc_stab = 0.05
+			}
+			country_event = greece_rework.5
+			add_to_variable = {
+				GRE_military_anger = -1
+			}
+			custom_effect_tooltip = GRE_mil_anger_1_minus
+		}
+	}
+	focus = {
+		id = GRE_work_with_the_populists
+		icon = GFX_fill_later
+		available = {
+		}
+		mutually_exclusive = {
+			focus = GRE_all_left_front
+		}
 		x = 1
+		y = 1
+		relative_position_id = GRE_victory_of_the_liberals
+		prerequisite = {
+			focus = GRE_victory_of_the_liberals
+		}
+		cost = 5
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				OR = {
+					is_historical_focus_on = no
+					has_government = democratic
+				}
+			}
+		}
+		search_filters = {
+			FOCUS_FILTER_INTERNAL_AFFAIRS
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = GRE_panagis_tsaldaris
+		}
+	}
+	focus = {
+		id = GRE_all_left_front
+		icon = GFX_fill_later
+		available = {
+		}
+		mutually_exclusive = {
+			focus = GRE_work_with_the_populists
+		}
+		x = 3
 		y = 1
 		relative_position_id = GRE_victory_of_the_liberals
 		prerequisite = {

@@ -193,7 +193,7 @@ characters = {
 				}
 			}
 			traits = {
-				hard_working_politician
+				minister_of_army_affairs
 			}
 		}
 	}
@@ -547,6 +547,31 @@ characters = {
 			}
 			traits = {
 				sharp_tongued_lawyer
+			}
+		}
+	}
+	GRE_panagis_tsaldaris = {
+		name = GRE_panagis_tsaldaris
+		portraits = {
+			army = {
+				small = "GFX_idea_gre_konstantinos_tsaldaris"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GRE_panagis_tsaldaris
+			allowed = {
+				original_tag = GRE
+				has_dlc = "Battle for the Bosporus"
+			}
+			available = {
+				has_completed_focus = GRE_work_with_the_populists
+			}
+			visible = {
+				has_global_flag = gre_bftb_focus_tree
+			}
+			traits = {
+				conservative_populist
 			}
 		}
 	}

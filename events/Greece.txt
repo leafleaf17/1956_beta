@@ -33,10 +33,20 @@ country_event = {
 		complete_national_focus = GRE_victory_of_the_liberals
 		add_stability = -0.02
 		add_ideas = GRE_government_in_crisis
+		add_to_variable = {
+			GRE_pol_mil_pp = -0.15
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_minus_15_pp
 		hidden_effect = {
 			country_event = {
 				id = greece_rework.3
 				days = 8
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = greece_rework.6
+				days = 38
 			}
 		}
 	}
@@ -111,7 +121,37 @@ country_event = {
 		add_stability = 0.025
 	}
 }
-
+country_event = {
+	id = greece_rework.6
+	title = greece_rework.6.t
+	desc = greece_rework.6.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.6.a
+		activate_advisor = GRE_ioannis_metaxas
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_to_variable = {
+			GRE_soc_stab = -0.05
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_minus_5_stab
+	}
+	option = {
+		name = greece_rework.6.b
+		activate_advisor = GRE_ioannis_metaxas
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.02
+		}
+		add_to_variable = {
+			GRE_soc_stab = -0.05
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_minus_5_stab
+	}
+}
 country_event = {
 	id = greece.1
 	title = greece.1.t
