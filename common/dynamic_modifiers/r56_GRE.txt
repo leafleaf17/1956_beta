@@ -37,4 +37,5 @@ GRE_social_unrest = {
     stability_factor = GRE_soc_stab
     production_speed_buildings_factor = GRE_building_speed
     industrial_capacity_factory = GRE_soc_factory_output
+    consumer_goods_factor = GRE_soc_consumer_goods
 }
