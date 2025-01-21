@@ -35,5 +35,8 @@ GRE_modify_social_unrest_minus_5_pp: "Modify §YSocial Unrest§! by:\nPolitical 
 GRE_modify_social_unrest_minus_5_stab: "Modify §YSocial Unrest§! by:\nStability: §R-5.00%§!"
 
 GRE_modify_social_unrest_minus_15_pp: "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §R-15%§!"
-
-GRE_modify_social_unrest_5_pp_5_stab: "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §G+5%§!\nStability: §G+5.00%§!"
+greece_rework.7.t: "Unrest Across the Country"
+greece_rework.7.d: "In no small part because of recent political developments, Greeks have began taking to the streets in protest. Demands range from better working conditions, new social programs, guarentees for freedom, and more. The protests, of course, have been met with an urge from those in the army to brutally crack down on what they're calling 'the first step of a communist revolution', while more... moderate politician call for reforms to be made."
+greece_rework.7.a: "Of course we're in political turmoil, its Greece after all!"
+GRE_modify_social_unrest_5_pp_5_stab:0 "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §G+5%§!\nStability: §G+5.00%§!"
+GRE_modify_social_unrest_5_pp_5_stab_minus:0 "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §R-5%§!\nStability: §R-5.00%§!"

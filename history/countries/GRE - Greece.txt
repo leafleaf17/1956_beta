@@ -20,6 +20,10 @@ country_event = {
 	id = greece_rework.1
 	days = 3
 }
+country_event = {
+	id = greece_rework.7
+	days = 68
+}
 set_variable = {
 	GRE_pol_mil_pp = -0.25
 }

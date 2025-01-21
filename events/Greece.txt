@@ -110,6 +110,7 @@ country_event = {
 		add_stability = -0.04
 	}
 }
+
 country_event = {
 	id = greece_rework.5
 	title = greece_rework.5.t
@@ -121,6 +122,7 @@ country_event = {
 		add_stability = 0.025
 	}
 }
+
 country_event = {
 	id = greece_rework.6
 	title = greece_rework.6.t
@@ -152,6 +154,34 @@ country_event = {
 		custom_effect_tooltip = GRE_modify_social_unrest_minus_5_stab
 	}
 }
+
+country_event = {
+	id = greece_rework.7
+	title = greece_rework.7.t
+	desc = greece_rework.7.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.7.a
+		add_to_variable = {
+			GRE_soc_pp = -0.05
+		}
+		add_to_variable = {
+			GRE_soc_stab = -0.05
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_5_pp_5_stab_minus
+		set_global_flag = GRE_pol_turmoil
+	}
+}
+
+#
+#
+#
+#
+#
+#
+#
+#vanilla shit
 country_event = {
 	id = greece.1
 	title = greece.1.t
