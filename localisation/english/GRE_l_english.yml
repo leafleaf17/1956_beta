@@ -33,8 +33,11 @@ greece_rework.4.d: "One of the 3 major Greek political parties has always been t
 greece_rework.4.a: "Certainly not going to help our politcal stability"
 GRE_modify_social_unrest_minus_5_pp: "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §R-5%§!"
 GRE_modify_social_unrest_minus_5_stab: "Modify §YSocial Unrest§! by:\nStability: §R-5.00%§!"
-
 GRE_modify_social_unrest_minus_15_pp: "Modify §YSocial Unrest§! by:\nPolitical Power Gain: §R-15%§!"
+GRE_modify_social_unrest_5_prod_gain: "Modify §YSocial Unrest§! by:\n£prod_eff Production Efficiency growth: §R-5.00%§!"
+greece_rework.8.t: "Farmers Join Protests"
+greece_rework.8.d: "Farmers across Greece have joined the recent protests against the government, in which they seek greater privileges as well as guarentees of civil rights. This has seen food prices across Greece see a slow but steady increase, which is expected to cause even further civil unrest. "
+greece_rework.8.a: "Brats!"
 greece_rework.7.t: "Unrest Across the Country"
 greece_rework.7.d: "In no small part because of recent political developments, Greeks have began taking to the streets in protest. Demands range from better working conditions, new social programs, guarentees for freedom, and more. The protests, of course, have been met with an urge from those in the army to brutally crack down on what they're calling 'the first step of a communist revolution', while more... moderate politician call for reforms to be made."
 greece_rework.7.a: "Of course we're in political turmoil, its Greece after all!"

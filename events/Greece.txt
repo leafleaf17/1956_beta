@@ -171,9 +171,28 @@ country_event = {
 		}
 		custom_effect_tooltip = GRE_modify_social_unrest_5_pp_5_stab_minus
 		set_global_flag = GRE_pol_turmoil
+		hidden_effect = {
+			country_event = {
+				id = greece_rework.8
+				days = 15
+			}
+		}
 	}
 }
-
+country_event = {
+	id = greece_rework.8
+	title = greece_rework.8.t
+	desc = greece_rework.8.d
+	picture = GFX_report_event_stalin_02
+	is_triggered_only = yes
+	option = {
+		name = greece_rework.8.a
+		add_to_variable = {
+			GRE_soc_efficiency_growth = -0.05
+		}
+		custom_effect_tooltip = GRE_modify_social_unrest_5_prod_gain
+	}
+}
 #
 #
 #
